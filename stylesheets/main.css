@@ -1,0 +1,217 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+header {
+    background-color: #2c2c3e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Ensures the logo and nav are on opposite sides */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+nav {
+    margin-left: auto; /* Pushes the navigation bar to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav a[href='logout.php'],
+nav a[href='login.php'] {
+    background-color: #66b3ff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a[href='logout.php']:hover {
+    background-color: #ff3333;
+}
+
+nav a[href='login.php']:hover {
+    background-color: #3399ff;
+}
+
+.welcome-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #2c2c3e;
+}
+
+.welcome-text {
+    max-width: 50%;
+}
+
+.welcome-text h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.welcome-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.banner-image {
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.films-list-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffcc00;
+}
+
+.films-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+/* Film Card Styling */
+.film-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #1e1e2f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.film-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.film-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.film-description {
+    font-size: 0.9rem;
+    color: #a4a3a3;
+    margin-bottom: 10px;
+}
+
+.view-details-btn,
+.book-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.book-btn {
+    background-color: #ffcc00;
+    color: white;
+}
+
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure the modal appears on top */
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 600px;
+    color: #a4a3a3;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-modal:hover {
+    color: darkred;
+}
+
+/* Modal Text Styling */
+#modal-title {
+    font-size: 1.8rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+#modal-description,
+#modal-director,
+#modal-genre,
+#modal-release,
+#modal-duration {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}

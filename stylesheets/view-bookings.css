@@ -1,0 +1,186 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #2c2c3e;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #ffcc00;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.admin-container {
+    background-color: #2c2c3e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #ffcc00;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #3c3c4e;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #444457;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+thead th {
+    background-color: #3c3c4e;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 1rem;
+    border-bottom: 1px solid #444457;
+    color: #cccccc;
+}
+
+tbody tr:hover {
+    background-color: #2e2e3f;
+}
+
+.delete-btn {
+    background-color: #ff6666;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #cc5555;
+}
+
+/* General Button Styling */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Showings Booking Button */
+.btn.showings-booking {
+    background-color: #3c87c3; /* Blue shade */
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn.showings-booking:hover {
+    background-color: #336ba1;
+    transform: scale(1.05);
+}
+
+/* Delete Booking Button */
+.btn.delete-booking {
+    background-color: #ff6666; /* Red shade */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn.delete-booking:hover {
+    background-color: #cc5555;
+    transform: scale(1.05);
+}
+
+/* Aligning Buttons */
+form .btn {
+    margin-top: 0.5rem;
+}
+
+
+/* No Bookings */
+.no-bookings {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2c2c3e;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}

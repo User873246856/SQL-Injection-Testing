@@ -1,0 +1,134 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background-color: #2c2c3e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a[href='logout.php'] {
+    background-color: #ff6666;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.nav-links a[href='logout.php']:hover {
+    background-color: #ff3333;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.welcome h4 {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Confirmation Section */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #2c2c3e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.confirmation h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.booking-message {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+}
+
+/* Film Details Section */
+.film-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.film-poster {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.booking-info {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.booking-info h4 {
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+}
+
+.booking-info p {
+    margin: 0.3rem 0;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #2c2c3e;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
